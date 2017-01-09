@@ -76,3 +76,9 @@ if [[ $TERMINIX_ID ]]; then
     source /etc/profile.d/vte.sh
 fi
 
+# Some configuration options for the 'less' pager.
+# -R: preserve color codes as colors
+# -M: display more status information about scroll position
+# -i: search is case-insensitive
+export LESS="-RMi"
+
