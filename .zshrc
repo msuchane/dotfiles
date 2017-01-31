@@ -10,14 +10,17 @@ compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=2000
+SAVEHIST=2000
 setopt appendhistory autocd notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
 autoload -Uz promptinit
 promptinit
+
+# Don't save duplicate entries in the history file
+setopt HIST_IGNORE_ALL_DUPS
 
 # red prompt for root, blue otherwise
 if [[ $UID -eq 0 ]]
