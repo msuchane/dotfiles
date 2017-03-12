@@ -39,10 +39,12 @@ set so=3
 " nechat myš na pokoji, kromě souborů nápovědy
 set mouse=h
 
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+" rainbow-colored parentheses; mostly useful in Lisp, otherwise I find it
+" kinda distracting
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
+" au Syntax * RainbowParenthesesLoadBraces
 
 " set background=light
 " colorscheme solarized
