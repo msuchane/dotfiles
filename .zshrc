@@ -75,7 +75,7 @@ bindkey "^[[3~" delete-char
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # For Terminix:
-if [[ $TERMINIX_ID ]]; then
+if [[ $TILIX_ID ]]; then
     source /etc/profile.d/vte.sh
 fi
 
