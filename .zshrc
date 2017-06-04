@@ -85,3 +85,5 @@ fi
 # -i: search is case-insensitive
 export LESS="-RMi"
 
+# OPAM configuration
+. ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
