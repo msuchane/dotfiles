@@ -2,11 +2,13 @@
 # This script creates symbolic links from the cloned repository to config files
 # in the /root directory and also to some files that are root-writable only.
 
+cwd=$(pwd)
+
 # zsh
 echo "Linking zsh"
-sudo ln -s .zshrc /root/.zshrc
-sudo ln -s .zshrc.zni /root/.zshrc.zni
-sudo ln -s .zcompdump /root/.zcompdump
+sudo ln -s ${cwd}/dot/.zshrc /root/.zshrc
+sudo ln -s ${cwd}/dot/.zshrc.zni /root/.zshrc.zni
+sudo ln -s ${cwd}/dot/.zcompdump /root/.zcompdump
 
 echo "Cloning the zsh-syntax-highlighting repository"
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
@@ -14,16 +16,16 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
 
 # inputrc
 echo "Linking inputrc"
-sudo ln -s .inputrc /root/.inputrc
+sudo ln -s ${cwd}/dot/.inputrc /root/.inputrc
 
 # Creating the /root/config/ directory
 sudo mkdir -p /root/.config
 
 # neovim
 echo "Linking Neovim configuration"
-sudo ln -s config/nvim /root/.config/nvim
+sudo ln -s ${cwd}/config/nvim /root/.config/nvim
 
 # fontconfig
 echo "Linking fontconfig"
-sudo ln -s etc/fonts_local.conf /etc/fonts/local.conf
+sudo ln -s ${cwd}/etc/fonts_local.conf /etc/fonts/local.conf
 

@@ -2,11 +2,13 @@
 # This script creates symbolic links from the cloned repository to config files
 # in the current user's home directory.
 
+cwd=$(pwd)
+
 # zsh
 echo "Linking zsh"
-ln -s .zshrc ~/.zshrc
-ln -s .zshrc.zni ~/.zshrc.zni
-ln -s .zcompdump ~/.zcompdump
+ln -s ${cwd}/dot/.zshrc ~/.zshrc
+ln -s ${cwd}/dot/.zshrc.zni ~/.zshrc.zni
+ln -s ${cwd}/dot/.zcompdump ~/.zcompdump
 
 echo "Cloning the zsh-syntax-highlighting repository"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
@@ -14,13 +16,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
 
 # inputrc
 echo "Linking inputrc"
-ln -s .inputrc ~/.inputrc
+ln -s ${cwd}/dot/.inputrc ~/.inputrc
 
 # mpv
 echo "Linking mpv configuration"
-ln -s config/mpv ~/.config/mpv
+ln -s ${cwd}/config/mpv ~/.config/mpv
 
 # neovim
 echo "Linking Neovim configuration"
-ln -s config/nvim ~/.config/nvim
+ln -s ${cwd}/config/nvim ~/.config/nvim
 
