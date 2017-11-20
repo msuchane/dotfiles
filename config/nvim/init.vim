@@ -52,3 +52,17 @@ set mouse=h
 " load filetype-specific indentation rules
 filetype plugin indent on
 
+" define some specific rules for file types
+autocmd FileType xml set ts=2
+autocmd FileType xml set shiftwidth=2
+autocmd FileType xml set spell spelllang=en_us
+
+autocmd FileType docbk set ts=2
+autocmd FileType docbk set shiftwidth=2
+autocmd FileType docbk set spell spelllang=en_us
+autocmd FileType xml set ft=docbk
+
+autocmd FileType asciidoc set ts=2
+autocmd FileType asciidoc set shiftwidth=2
+autocmd FileType asciidoc set spell spelllang=en_us
+
