@@ -12,3 +12,6 @@ set blink-matching-paren on
 "\e[1;5D":  backward-word
 "\e[1;5C":  forward-word
 
+# When pressing Ctrl-U, delete the whole line, not just from cursor to start
+"\C-U":       kill-whole-line
+
