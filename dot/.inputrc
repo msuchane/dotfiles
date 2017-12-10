@@ -3,8 +3,12 @@ $include /etc/inputrc
 set blink-matching-paren on
 
 # Page Up/Down find previous history match.
-"\e[5~": history-search-backward
-"\e[6~": history-search-forward
-"^[[5~": history-search-backward
-"^[[6~": history-search-forward
+"\e[5~":    history-search-backward
+"\e[6~":    history-search-forward
+"^[[5~":    history-search-backward
+"^[[6~":    history-search-forward
+
+# Ctrl-Left/Right moves the cursor to the previous/next word
+"\e[1;5D":  backward-word
+"\e[1;5C":  forward-word
 
