@@ -53,6 +53,13 @@ set mouse=h
 filetype plugin indent on
 
 " define some specific rules for file types
+autocmd FileType html set ts=2
+autocmd FileType html set shiftwidth=2
+autocmd FileType html set spell spelllang=en_us
+autocmd FileType xhtml set ts=2
+autocmd FileType xhtml set shiftwidth=2
+autocmd FileType xhtml set spell spelllang=en_us
+
 autocmd FileType xml set ts=2
 autocmd FileType xml set shiftwidth=2
 autocmd FileType xml set spell spelllang=en_us
@@ -60,7 +67,10 @@ autocmd FileType xml set spell spelllang=en_us
 autocmd FileType docbk set ts=2
 autocmd FileType docbk set shiftwidth=2
 autocmd FileType docbk set spell spelllang=en_us
-autocmd FileType xml set ft=docbk
+" See
+" https://superuser.com/questions/505353/vim-is-spellchecking-in-xml-files-where-i-dont-want-it-to-and-only-there
+autocmd FileType docbk syntax spell toplevel
+autocmd FileType xml syntax spell toplevel
 
 autocmd FileType asciidoc set ts=2
 autocmd FileType asciidoc set shiftwidth=2
