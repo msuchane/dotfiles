@@ -4,6 +4,10 @@
 
 cwd=$(pwd)
 
+# bash
+echo "Improving bash"
+cat ${cwd}/dot/bash_snippet.sh >> ~/.bashrc
+
 # zsh
 echo "Linking zsh"
 sudo ln -s ${cwd}/dot/.zshrc /root/.zshrc
