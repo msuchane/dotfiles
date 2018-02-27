@@ -2,9 +2,9 @@
 #   <user name> <working dir base name> $
 
 # Save color codes into sane variables
-blue="\e[0;34m"
-red="\e[0;31m"
-cyan="\e[0;36m"
+blue="\e[1;34m"
+red="\e[1;31m"
+cyan="\e[1;36m"
 
 # Use red for root, blue for user
 if [[ $UID -eq 0 ]]; then

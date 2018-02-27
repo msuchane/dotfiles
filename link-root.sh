@@ -6,7 +6,7 @@ cwd=$(pwd)
 
 # bash
 echo "Improving bash"
-cat ${cwd}/dot/bash_snippet.sh >> ~/.bashrc
+cat ${cwd}/dot/bash_snippet.sh >> /root/.bashrc
 
 # zsh
 echo "Linking zsh"
