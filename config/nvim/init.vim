@@ -76,3 +76,9 @@ autocmd FileType asciidoc set ts=2
 autocmd FileType asciidoc set shiftwidth=2
 autocmd FileType asciidoc set spell spelllang=en_us
 
+" Jump to last cursor position when opening a file unless it's invalid
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g'\"" |
+    \ endif
+
