@@ -110,3 +110,6 @@ alias preview='test -e tmp/en-US/html-single/index.html && firefox tmp/en-US/htm
 ## Staging
 alias rhstage="rhpkg publican-build --lang en-US -m'Updated'"
 
+# Generate a new asciidoc module file
+alias newdoc=~/RH/py/newdoc/newdoc.py
+
