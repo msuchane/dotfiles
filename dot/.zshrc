@@ -113,3 +113,15 @@ alias rhstage="rhpkg publican-build --lang en-US -m'Updated'"
 # Generate a new asciidoc module file
 alias newdoc=~/RH/py/newdoc/newdoc.py
 
+# Aliases for shorter git commands
+alias gita="git add"
+alias gitc="git commit"
+alias gitco="git checkout"
+alias gits="git status"
+alias gitd="git diff --word-diff=color"
+alias gitl="git log"
+alias gitps="git push"
+alias gitpl="git pull"
+alias gitb="git branch"
+alias gitba="git branch -a"
+
