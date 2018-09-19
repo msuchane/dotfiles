@@ -111,7 +111,7 @@ alias preview='test -e tmp/en-US/html-single/index.html && firefox tmp/en-US/htm
 alias rhstage="rhpkg publican-build --lang en-US -m'Updated'"
 
 # Generate a new asciidoc module file
-alias newdoc=~/RH/py/newdoc/newdoc.py
+# alias newdoc=~/RH/py/newdoc/newdoc/newdoc.py
 
 # Aliases for shorter git commands
 alias gita="git add"
@@ -125,3 +125,4 @@ alias gitpl="git pull"
 alias gitb="git branch"
 alias gitba="git branch -a"
 
+alias corn='/home/msuchane/RH/py/corn/corn.py'

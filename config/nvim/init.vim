@@ -1,31 +1,31 @@
-" zvýrazňovat syntax
+" Highlight syntax
 syntax on
 
-"" zobrazovat čísla řádků
+"" Show line numbers
 " set number
-"" zobrazovat čísla řádků, nakolik jsou vzdálené od aktuálního
+"" Show the distance in line numbers from the current line
 " set relativenumber
-"" číslo aktuálního řádku ve stavové liště
+"" Show the line number in the status bar
 set ruler
 
-"" zvýrazňovat aktuální řádek
+"" Highlight the current line
 " set cursorline
 
-" nedělit slova na konci řádku
+" Don't split words on line breaks
 set linebreak
 
-" taby se převádějí na čtyři mezery
+" Tabs are converted to 4 spaces
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-" povolit automatické odsazování. pokročilejší je 'smartindent'
-" v neovim výchozí nastavení
+"" Enable automatic code indentation. A more advanced option is 'smartindent'.
+"" This is the default behavior in Neovim.
 " set autoindent
 
-" 'moderní' chování klávesy backspace
-" v neovim výchozí nastavení
+"" A 'modern' Backspace behavior: delete indentation and line breaks.
+"" This is the default behavior in Neovim.
 " set backspace=indent,eol,start
 
 " Allow specified keys that move the cursor left/right to move to the
@@ -33,10 +33,10 @@ set softtabstop=4
 " the line
 set whichwrap+=<,>,h,l
 
-" kolik řádků při posouvání nechat před kurzorem na kraji obrazovky
+" Number of lines that will always be kept at the screen edge when scrolling
 set so=3
 
-" nechat myš na pokoji, kromě souborů nápovědy
+" Only enable the mouse cursor for help documents
 set mouse=h
 
 " rainbow-colored parentheses; mostly useful in Lisp, otherwise I find it
@@ -81,4 +81,7 @@ autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g'\"" |
     \ endif
+
+" colorscheme torte
+" set bg=dark
 
