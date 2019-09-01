@@ -83,5 +83,5 @@ autocmd BufReadPost *
     \ endif
 
 " colorscheme torte
-" set bg=dark
+set bg=light
 
