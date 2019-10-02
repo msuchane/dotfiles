@@ -85,10 +85,6 @@ fi
 # -i: search is case-insensitive
 export LESS="-RMi"
 
-# OPAM configuration
-. ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-
 # For Publican 1.0+
 
 ## Building
@@ -100,18 +96,6 @@ alias pubpdf="publican build --langs=en-US --formats=pdf"
 alias pubepub="publican build --langs=en-US --formats=epub"
 alias puball="publican build --langs=en-US --formats='html-single,html,pdf'"
 alias pubtxt="publican build --langs=en-US --formats=txt"
-
-## Previewing
-alias tmpsingle="xdg-open tmp/en-US/html-single/index.html"
-alias tmpmulti="xdg-open tmp/en-US/html/index.html"
-alias tmppdf="xdg-open tmp/en-US/pdf/*.pdf"
-alias preview='test -e tmp/en-US/html-single/index.html && firefox tmp/en-US/html-single/index.html || echo '\''Build it, dude.'\'' >&2'
-
-## Staging
-alias rhstage="rhpkg publican-build --lang en-US -m'Updated'"
-
-# Generate a new asciidoc module file
-# alias newdoc=~/RH/py/newdoc/newdoc/newdoc.py
 
 # Aliases for shorter git commands
 alias gita="git add"
@@ -125,4 +109,3 @@ alias gitpl="git pull"
 alias gitb="git branch"
 alias gitba="git branch -a"
 
-alias corn='/home/msuchane/RH/py/corn/corn.py'
