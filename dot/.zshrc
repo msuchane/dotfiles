@@ -30,7 +30,7 @@ fi
 
 # See:
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
-PROMPT="%B%F{$fgcolor}%n%f %F{cyan}%2~%f%F{$fgcolor} %# %f%b"
+PROMPT="%B%F{$fgcolor}%n%f%b%F{white}@%f%B%F{$fgcolor}%m%f %F{cyan}%2~%f%F{$fgcolor} %# %f%b"
 
 # History search
 # Doing this, only past commands matching the current line up to the current

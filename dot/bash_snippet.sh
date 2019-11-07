@@ -1,9 +1,11 @@
 # A simple, colorized prompt: 
-#   <user name> <working dir base name> $
+#   <user name>@<host name> <working dir base name> $
 
 # Use red for root, blue for user
 if [[ $UID -eq 0 ]]; then
-    export PS1="\[\e[1;31m\]\u\[\e[m\] \[\e[1;36m\]\W\[\e[m\] \[\e[1;31m\]\\$\[\e[m\] "
+    fgcolor="\[\e[1;31m\]"
 else
-    export PS1="\[\e[1;34m\]\u\[\e[m\] \[\e[1;36m\]\W\[\e[m\] \[\e[1;34m\]\\$\[\e[m\] "
+    fgcolor="\[\e[1;34m\]"
 fi
+
+export PS1="${fgcolor}\u\[\e[0;37m\]@${fgcolor}\h\[\e[m\] \[\e[1;36m\]\W\[\e[m\] ${fgcolor}\\$\[\e[m\] "
